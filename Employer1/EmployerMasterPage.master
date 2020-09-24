@@ -1,0 +1,133 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="EmployerMasterPage.master.cs" Inherits="Employer_EmployerMasterPage" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+<meta http-equiv="Content-Type" content="text/html;  charset=ISO-8859-1" />
+<TITLE>Online job portal</TITLE>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+    <link href="../styles.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<div id="content">
+<!-- header begins -->
+
+<div id="header"> 
+	<div id="logo">
+		<h1><a href="#">Online Job Portal</a></h1>
+		<h2><a href="http://www.metamorphozis.com/" id="metamorph">secure your future 
+            here...</a></h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="../Employer/HomePage.aspx" title="">Home</a></li>
+			<li><a href="../EmployerRegister.aspx" title="">Post Job</a></li>			
+			<li><a href="../Employer/UpdateEmployerProfile.aspx" title="">Update Profile</a></li>
+			<li><a href="../HomePage.aspx" title="">Sign Out</a></li>
+            
+		</ul>
+	</div>
+</div>
+
+<!-- header ends -->
+<!-- content begins -->
+<div id="main">
+	<div id="right">
+		
+        	<h4>Employer
+                <asp:Label ID="Label1" runat="server"></asp:Label>
+                    </h4>
+		<div class="text">
+			 
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                &nbsp;
+        </asp:ContentPlaceHolder><p><br />
+  <br />
+			      &nbsp;</p>
+			</div>
+					
+                <h4>Online Job Portal</h4>
+		<div class="text">
+		
+			<div id="leftcol">
+
+
+        <a href="#"></a><br />
+        
+
+        </div>
+
+        <div id="cencol">
+
+
+        <a href="#"></a><br />
+       
+        
+        </div> 
+
+        <div id="rightcol">
+
+
+        <a href="#"></a><br />
+       
+        
+        </div>
+
+
+		</div>
+	</div>
+	<div id="left">
+			
+			<h3>Employer</h3>
+			<div id="categories">
+				<ul>
+					<li><a href="../Employer/HomePage.aspx">Home</a></li>							
+				    <li><a href="../EmployerRegister.aspx">Register as new Employer</a></li>
+					<li><a href="../Employer/UpdateCompanyProfile.aspx">Update CompanyDetail</a></li>
+					<asp:TreeView ID="TreeView1" runat="server">
+                        <Nodes>
+                            <asp:TreeNode Text="Search JobSeeker" Value="Search By Country">
+                                <asp:TreeNode NavigateUrl="~/Employer/SearchByCountry.aspx" 
+                                    Text="Search By Country" Value="Search By Country"></asp:TreeNode>
+                                <asp:TreeNode Text="Search By State" Value="Search By State" 
+                                    NavigateUrl="~/Employer/SearchByState.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Search By City" Value="Search By City" 
+                                    NavigateUrl="~/Employer/SearchByCity.aspx"></asp:TreeNode>
+                                <asp:TreeNode Text="Search By Category" Value="Search By Category" 
+                                    NavigateUrl="~/Employer/SearchByCatagory.aspx">
+                                </asp:TreeNode>
+                            </asp:TreeNode>
+                        </Nodes>
+                    </asp:TreeView>
+					
+				</ul>
+			</div>
+			
+			
+	</div>	
+	</div><div style="clear:both;">
+	</div>
+	
+	</div>
+<!--content ends -->
+<!--footer begins -->
+
+
+<div id="footer">
+
+
+</div>
+<!-- footer ends-->
+<div style="text-align: center; font-size: 0.75em;"></div>
+
+
+</form>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminMasterPage.master.cs" Inherits="Account_AdminMasterPage" %>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1" runat="server">
+    <meta http-equiv=Content-Type content="text/html;  charset=ISO-8859-1">
+<TITLE>Online job portal</TITLE>
+
+
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+    <link href="../styles.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+<form id="form1" runat="server">
+<center>
+
+<div id="content">
+<!-- header begins -->
+
+<div id="header"> 
+	<div id="logo">
+		<h1><a href="#">Online Job Portal</a></h1>
+		<h2><a href="http://www.metamorphozis.com/" id="metamorph">secure your future here...</a></h2>
+	</div>
+	<div id="menu">
+		<ul>
+			<li><a href="../JobSeeker/HomePage.aspx" title="">JobSeeker</a></li>
+			<li><a href="../Employer/HomePage.aspx" title="">Employer</a></li>
+			<li><a href="../HomePage.aspx" title="">Sign Out</a></li>
+			<li><a href="Admin/About.aspx" title="">About</a></li>
+			<li><a href="ContactInfo.aspx" title="">Contact</a></li>
+		</ul>
+	</div>
+</div>
+
+<!-- header ends -->
+<!-- content begins -->
+<div id="main">
+	<div id="right">
+		
+        	<h4>Welcome
+                <asp:Label ID="Label1" runat="server"></asp:Label>
+                    </h4>
+		<div class="text">
+			 
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        &nbsp
+        </asp:ContentPlaceHolder><p><br />
+  <br />
+			      &nbsp;</p>
+			</div>
+					
+                <h4>Online Job Portal</h4>
+		<div class="text">
+		
+			<div id="leftcol">
+
+
+        <a href="#"></a><br />
+       
+
+        </div>
+
+        <div id="cencol">
+
+
+        <a href="#"></a><br />
+        
+        </div> 
+
+        <div id="rightcol">
+
+
+        <a href="#"></a><br />
+       
+        </div>
+
+
+		</div>
+	</div>
+	<div id="left">
+			
+			<h3>Go to</h3>
+			<div id="categories">
+				<ul>
+				
+				
+				<li><a href="Admin/Home.aspx">Home</a></li>
+					<li><a href="../Admin/AddCountry.aspx">Add Country</a></li>
+					<li><a href="../Admin/AddState.aspx">Add State</a></li>
+					<li><a href="../Admin/AddCity.aspx">Add City</a></li>
+                    <li><a href="../Admin/AddCategory.aspx">Add Category</a></li>
+					<li><a href="../Admin/UpdateOrDeleteCountry.aspx">Manage Country</a></li>
+					<li><a href="../Admin/UpdateOrDeleteState.aspx">Manage State</a></li>
+					<li><a href="../Admin/UpdateOrDeleteCity.aspx">Manage City</a></li>
+                    <li><a href="../Admin/UpdateOrDeleteCategory.aspx">Manage Category</a></li>
+                    <li><a href="../HomePage.aspx">Sign Out</a></li>
+        </div>
+	</div><div style="clear:both;">
+	</div>
+	
+	</div>
+<!--content ends -->
+<!--footer begins -->
+
+
+<div id="footer">
+
+</div>
+<!-- footer ends-->
+<div style="text-align: center; font-size: 0.75em;"></div>
+
+</center>
+</form>
+</body>
+</html>

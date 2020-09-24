@@ -1,0 +1,124 @@
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="OuterMasterPage.master.cs" Inherits="OuterMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat ="server">
+    
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Online Job Portal</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+<asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body>
+<form id ="form1" runat ="server">
+
+<div id="content" >
+<!-- header begins -->
+
+<div id="header"> 
+	<div id="logo">
+		<h1><a href="#">Online Job Portal</a></h1>
+		<h2><a href="http://www.metamorphozis.com/" id="metamorph">Secure your future here...</a></h2>
+	</div>
+	<div id="menu">
+		<ul>
+		    <li><a href="HomePage.aspx" title="">Home</a></li>
+			<li><a href="JobSeekerRegister.aspx" title="">Post Resume</a></li>
+			<li><a href="LoginPage.aspx" title="">Login</a></li>
+            <li><a href="ResumeTips.aspx" title="">Resume  Tips</a></li>
+			<li><a href="contactUs.aspx" title="">Contact Us</a></li>
+			
+		</ul>
+	</div>
+</div>
+
+<!-- header ends -->
+<!-- content begins -->
+<div id="main">
+	<div id="right">
+		
+        	<h4>WelCome to our Site</h4>
+		<div class="text">
+			
+			<p>&nbsp;
+            </p>
+                    <p>&nbsp;<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        </asp:ContentPlaceHolder></p>
+			</div>
+					
+                <h4>Online JobPortal</h4>
+		<div class="text">
+		
+			<div id="leftcol">
+
+
+        <a href="#"></a><br />
+        
+
+        </div>
+
+        <div id="cencol">
+
+
+        <a href="#"></a><br />
+        
+        </div> 
+
+        <div id="rightcol">
+
+
+        <a href="#"></a><br />
+        
+        </div>
+
+
+		</div>
+	</div>
+	<div id="left">
+			
+			<h3>Go to</h3>
+			
+				
+			<div id="categories">
+				<ul>
+				<li><a href="HomePage.aspx">Home</a></li>
+					
+					<li><a href="JobSeekerRegister.aspx">JobSeekerRegistration</a></li>
+					<li><a href="EmployerRegister.aspx">EmployerRegistration</a></li>
+					<li><a href="LoginPage.aspx">LoginForm</a></li>
+                  
+				</ul>
+			</div>
+			
+		
+	</div>	
+	</div><div style="clear:both;">
+	</div>
+	
+	</div>
+<!--content ends -->
+<!--footer begins -->
+
+
+<div id="footer">
+<p>  http:\\www.onlinejobportal.com</p>
+            <p><span class="gry">All rights reserved © 2011 Info Edge India Ltd. </span>
+		</p>
+
+</div>
+<!-- footer ends-->
+
+</center>
+</form>
+</body>
+</html>
